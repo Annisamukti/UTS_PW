@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+  body {
+    width: 80%;
+    height: 100vh;
+    margin-left: 5rem;
+    background-color: #9AD0C2;
+    color: #265073;
+    font-family: 'Optima'sans-serif;
+    font-size: 16px;
+  }
+  
+  h1{
+    text-align: center;
+    color: #265073;
+  }
+
+form {
+  width: 60vw;
+  max-width: 200px;
+  min-width: 300px;
+  margin: 5rem;
+  padding-bottom: 2rem;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #132043;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 1rem 0;
+    
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #ECF4D6;
+    border: 1px solid #ECF4D6;
+    color: #265073;
+    margin: 0;
+    margin-right: 4rem;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #2D9596;
+    border-color: #2D9596;
+    min-width: 300px;
+    color: #141E46;
+  }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVASI FORM</title>
+</head>
+<body>
+  <!--form --> 
+  <section>
+    <h1>RESERVASI FORM</h1>
+    <label for="name">Name:<input id="name" name="name" type="text" required /></label>
+    <label for="no-HP">No. HP:<input id="no-HP" name="no-HP" type="text" required /></label>
+    <label for="email">Email:<input id="email" name="email" type="email" required /></label>
+    <label for="alamat">Alamat:<input id="alamat" name="alamat" type="text" required /></label>
+    <label for="alamat">Jenis Layanan:</label>
+    <label for="manicure"><input id="manicure" type="radio" name="account-type" class="inline" />Manicure</label>
+    <label for="pedicure"><input id="pedicure" type="radio" name="account-type" class="inline" />Pedicure</label>
+    <label for="nail-art"><input id="nail-art" type="radio" name="account-type" class="inline" />Nail Art Creative</label>
+    <input type="submit" value="Submit" href="#" />
+  </section> 
+</body>
+</html>

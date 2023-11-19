@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300&family=Tangerine:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+    background-color: #ECF4D6;
+    margin-top: 200px;
+}
+
+/*navbar*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 4%;
+    background-color: #9AD0C2;
+    border-bottom: 1px #363062;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar .logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar .logo a{
+    margin-left: 2rem;
+    font-weight: 700;
+    color: white;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar .logo img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.navbar .navbar-nav{
+    display: flex;
+}
+
+.navbar .navbar-nav a{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5rem;
+    color: #872341;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover{
+    color: #363062;
+    font-size: 0.9rem;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid #363062;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+#menu{
+    display: none;
+}
+
+/* navbar-dropdown */
+.dropdown a{
+
+    padding: 0;    
+}
+
+.dropdown ul{
+    list-style-type: none;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+    display: block;
+}
+
+.isi-dropdown a:hover {
+    color: #fff !important;
+}
+
+.isi-dropdown {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    background-color: #FCF5ED;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.isi-dropdown a {
+    color: #CE5A67 !important;
+    border-radius: 0;
+}
+
+.isi-dropdown a:hover {
+    color: #2E4374 !important;
+    background: #9BBEC8 !important;
+}
+
+/* hero start */
+.hero-section{
+    font-family: Georgia, serif ;
+    display: flex;
+    /* text-align: right; */
+    width: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.hero-section .content{
+    padding: 1.4rem;
+    max-width: 80%
+}
+
+.hero-section .content h2{
+    font-size: 40px;
+    color: #2D9596;
+    text-shadow: 5px 5px 20px rgba(150, 150, 172, 0.7);
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    ;
+}
+
+.hero-section .content p{
+    max-width: 90%;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 4rem;
+    color: #2D9596;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Tangerine', cursive;;
+}
+
+.hero-section marquee{
+    padding-top: 1rem;
+    font-size: 30px;
+    color:#265073;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* hero end */
+
+/* about start */
+.about{
+    display: block;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100vh;
+    background-color:#ECF4D6;
+
+}
+
+.about-all{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about .about-tittle{
+    font-size: 1.4rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    color: #872341;
+    border-bottom: 2px solid #872341;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.about .about-content p{
+    padding: 0;
+    color: #212A3E;
+    font-family: 'merienda', cursive;
+    font-size: 1.3rem;
+    text-align: justify;
+    /* width: 80%; */
+}
+
+
+.about .youtube{
+    margin-top: 1.3rem;
+}
+
+/* about end */
+
+/* article start */
+.article{
+    display: block;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100vh;
+    background-color:#ECF4D6;
+}
+
+.article .article-content{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+.article .article-content a{
+    font-family: 'Kaushan Script', cursive;
+    color:#872341;
+    padding-bottom: 1rem;
+}
+
+.article .article-content p{
+    text-align: justify;
+    font-family: 'merienda', cursive;
+    font-size: 1.2rem;
+    color: #212A3E;
+}
+
+.article .article-content a:hover{
+    text-decoration: underline;
+}
+
+.article h2{
+    font-size: 2.2rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    color: #2D9596;
+    border-bottom: 2px solid #2D9596;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.article .article-all{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* services start */
+.services{
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100vh;
+    background-color:#ECF4D6;
+}
+
+.services .services-tittle h2{
+    font-size: 2.2rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    color: #872341;
+    border-bottom: 2px solid #872341;
+    align-items: center;
+    text-align: left;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.services .gambar-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar1{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar-all img{
+    width: 20rem;
+}
+
+.gambar-desc h2{
+    font-family: 'Kaushan Script', cursive;
+    color: #394867;
+}
+
+.gambar-desc p{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'merienda', cursive;
+    color: #212A3E;
+}
+
+.gambar-desc a{
+    background-color: #212A3E;
+    padding: 4px 6px;
+    border-radius: 20px;
+    color: #e0dcff;
+}
+
+.gambar-desc a:hover{
+    border: 1px solid #15222C;
+    background-color: #9C254D;
+}
+
+/* service end */
+
+/* reservation start */
+.reservasi{
+    display: block;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 50vh;
+    background-color: #ECF4D6
+
+}
+
+.reservasi-tittle{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.4rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    color: #2D9596;
+    border-bottom: 2px solid #2D9596;
+}
+
+.reservasi .reservasi-content p{
+    padding: 0;
+    color: #212A3E;
+    font-family: 'merienda', cursive;
+    font-size: 1.5rem;
+}
+
+.reservasi .button button{
+    margin-top: 1rem;
+    background-color: #2D9596;
+    padding: 5px 4px;
+    border-radius: 20px;
+}
+
+.reservasi .button a{
+    color: #212A3E;
+    font-size: 1rem;
+}
+/* reservation end */ 
+
+/* contact start */ 
+.contact{
+    display: block;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 60vh;
+    padding-bottom: 2rem;
+    background-color: #ECF4D6
+}
+
+.contact-tittle{
+    font-size: 1.4rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    color: #872341;
+    border-bottom: 2px solid #872341;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.contact-content .contact-paragraf p{
+    padding: 0;
+    color: black;
+    font-family: 'Merienda', cursive;
+    font-size: 1.5rem;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+.button a{
+    color: #872341;
+    font-size: 3rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #e0dcff;
+}
+
+/* .footer start */
+
+.footer{
+    font-family: 'Kaushan Script', cursive;
+    background-color: #E4DCCF;
+    text-align: center;
+    display: flex;
+    padding: 1rem 0;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    justify-content: left;
+    margin-left: 3rem;
+}
+
+.footer .social{
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer .social a{
+
+    color: #872341;
+    margin: 1rem ;
+    margin-bottom: 2rem;
+}
+
+.footer .social a:hover,
+.footer .links a:hover{
+    color: #15222C;
+}
+
+.footer .links {
+    margin-bottom: 1.3rem;
+    font-weight: bold;
+}
+
+.footer .links a{
+    color: #872341;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+}
+
+.footer .credit{
+    font-size: 0.8rem;
+    color: #15222C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer .credit a{
+    color: #010101;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer .toko p{
+    font-family: 'Kaushan script', cursive;
+    color: #071952;
+}
+
+
+
+/* .footer end */
+
+/* media querry start*/
+@media screen and (max-width: 1340px){
+    html{
+        font-size: 75%;
+    }
+
+    #menu{
+        display: inline-block;
+    }
+
+    .navbar{
+        padding: 1.8rem 4%;
+    }
+
+    .navbar .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: cadetblue;
+        width: 30rem;
+        height: 100vh;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+        transition: 1s;
+    }
+
+    .navbar .navbar-nav a{
+        font-size: large;
+        color: brown;
+        display: block;
+        margin: 1.4rem;
+    }
+
+    .navbar .navbar-nav a:hover{
+        color: brown;
+        font-size: 1.6rem;
+    }
+
+    .navbar .navbar-nav a::after{
+        content: '';
+        display: block;
+        padding-bottom: 0.2rem;
+        border-bottom: 0.1rem solid brown;
+        transform: scaleX(0);
+        transition: 0.2s linear;
+    }
+
+    .footer{
+        font-size: 75%;
+    }
+
+    .footer.nav a{
+        font-size: 11px;
+    }
+
+    .credit p, a{
+        font-size: 11px;
+    }
+}
+/* media querry end*/
